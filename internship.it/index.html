@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARDA ESPORTS | Official Gaming Organization</title>
+    <meta name="description"
+        content="Official website of Harda Esports Organization - Leading competitive gaming team in India dominating BGMI, Free Fire, Valorant, and Community Tournaments.">
+    <meta name="keywords"
+        content="Harda Esports, Harda gaming, BGMI team, Free Fire esports, Valorant India, esports organization Harda, competitive gaming">
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ambient Light Orbs & Grid Background -->
+    <div class="cyber-grid-overlay"></div>
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+
+    <!-- ===================================================================
+       ANNOUNCEMENT / LIVE TICKER
+       =================================================================== -->
+    <div class="live-ticker-bar" id="live-ticker">
+        <div class="ticker-badge">
+            <div class="pulse-dot"></div>
+            <span>ESPORTS ALERT</span>
+        </div>
+        <div class="ticker-content-track">
+            <div class="ticker-item">
+                <i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i>
+                <span>HARDA BGMI SQUAD QUALIFIED FOR <strong>BGIS REGIONAL FINALS 2026</strong>!</span>
+            </div>
+            <div class="ticker-item">
+                <i class="fa-solid fa-fire" style="color: var(--accent-crimson);"></i>
+                <span>DAILY TIER 1 SCRIMS STARTING AT <span class="highlight">8:00 PM IST</span> - REGISTRATION
+                    OPEN</span>
+            </div>
+            <div class="ticker-item">
+                <i class="fa-solid fa-users" style="color: var(--accent-cyan);"></i>
+                <span>VALORANT & FREE FIRE TRYOUTS OPEN FOR ROSTER EXPANSION</span>
+            </div>
+            <div class="ticker-item">
+                <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
+                <span>WATCH HARDA CLUTCH REEL: 24-KILL WWCD DOMINATION ON YOUTUBE</span>
+            </div>
+            <!-- Duplicate for seamless continuous marquee loop -->
+            <div class="ticker-item">
+                <i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i>
+                <span>HARDA BGMI SQUAD QUALIFIED FOR <strong>BGIS REGIONAL FINALS 2026</strong>!</span>
+            </div>
+            <div class="ticker-item">
+                <i class="fa-solid fa-fire" style="color: var(--accent-crimson);"></i>
+                <span>DAILY TIER 1 SCRIMS STARTING AT <span class="highlight">8:00 PM IST</span> - REGISTRATION
+                    OPEN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================
+       HEADER & NAVIGATION
+       =================================================================== -->
+    <header class="main-header" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#hero" class="brand-logo-link" id="nav-brand-logo">
+                    <img src="assets/logo.jpg" alt="Harda Esports Official Crest" class="brand-logo-img">
+                    <div class="brand-text">
+                        <span class="brand-title">HARDA <span>ESPORTS</span></span>
+                        <span class="brand-subtitle">Organization</span>
+                    </div>
+                </a>
+
+                <ul class="desktop-nav" id="desktop-nav-menu">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#matches" class="nav-link">Matches</a></li>
+                    <li><a href="#rosters" class="nav-link">Rosters</a></li>
+                    <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#media" class="nav-link">Clips</a></li>
+                    <li><a href="#tryouts" class="nav-link">Join Squad</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <button class="btn btn-icon-only" id="theme-toggle-btn" title="Toggle Visual Mode"
+                        aria-label="Toggle Visual Mode">
+                        <i class="fa-solid fa-sun-plant-wilt" id="theme-icon"></i>
+                    </button>
+
+                    <button class="btn btn-cyber-cyan" id="btn-quick-scrims" onclick="openModal('tournamentModal')">
+                        <i class="fa-solid fa-crosshairs"></i>
+                        <span>Register Team</span>
+                    </button>
+
+                    <button class="mobile-toggle-btn" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================================================
+       HERO SECTION
+       =================================================================== -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-media">
+            <img src="assets/hero_bg.jpg" alt="Harda Esports Arena Stage">
+        </div>
+        <div class="hero-gradient-overlay"></div>
+
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge-tag">
+                        <i class="fa-solid fa-shield-halved" style="color: var(--accent-cyan);"></i>
+                        <span>CENTRAL INDIA'S PREMIER ESPORTS FORCE</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        DOMINATING <br>
+                        THE <span class="gradient-text">ARENA</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Welcome to the battleground of <strong>Harda Esports Organization</strong>.
+                        Forged in passion and engineered for victory, our elite rosters dominate BGMI, Free Fire, and
+                        Valorant on national stages.
+                    </p>
+
+                    <div class="hero-ctas">
+                        <a href="#rosters" class="btn btn-primary">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Meet The Squad</span>
+                        </a>
+                        <a href="#tournaments" class="btn btn-outline">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Scrims & Events</span>
+                        </a>
+                        <button class="btn btn-outline"
+                            onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                            <i class="fa-solid fa-play" style="color: var(--accent-crimson);"></i>
+                            <span>Watch Reel</span>
+                        </button>
+                    </div>
+
+                    <!-- Hero Metrics -->
+                    <div class="hero-stats-row">
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="120">0</span>+
+                            <span class="stat-label">Championships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="25">0</span>L+
+                            <span class="stat-label">Prize Pool Won</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="150">0</span>K+
+                            <span class="stat-label">Community Fans</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-target="98">0</span>%
+                            <span class="stat-label">Scrim Winrate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Glow Card / Visual -->
+                <div class="hero-visual-card">
+                    <div class="shield-glow-frame">
+                        <div class="shield-logo-wrap">
+                            <img src="assets/logo.jpg" alt="Harda Esports Crest Emblem">
+                        </div>
+
+                        <div class="hero-card-status">
+                            <i class="fa-solid fa-circle"></i>
+                            <span>ACTIVE IN COMPETITIVE TOURNAMENTS</span>
+                        </div>
+
+                        <h3 class="hero-card-title">HARDA ESPORTS</h3>
+                        <p class="hero-card-sub">Crown of Central India Gaming</p>
+
+                        <div class="hero-featured-match-pill">
+                            <div>
+                                <span
+                                    style="font-size: 0.72rem; color: var(--accent-cyan); display: block; font-family: var(--font-heading);">NEXT
+                                    SHOWDOWN</span>
+                                <span class="team-pill-name">HARDA SQUAD</span>
+                            </div>
+                            <span class="vs-badge">VS</span>
+                            <div>
+                                <span
+                                    style="font-size: 0.72rem; color: var(--text-muted); display: block; font-family: var(--font-heading); text-align: right;">GRAND
+                                    FINALS</span>
+                                <span class="team-pill-name">TEAM SOUL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       MATCH RESULTS & LIVE ARENA
+       =================================================================== -->
+    <section class="matches-section" id="matches">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-crosshairs"></i> Combat Log</span>
+                <h2>Recent Matches & Standings</h2>
+                <p>Real-time tournament scoreboards and official battle logs from our active divisions.</p>
+            </div>
+
+            <div class="matches-cards-grid">
+                <!-- Match 1 (Victory) -->
+                <div class="match-card">
+                    <div class="match-header-row">
+                        <span class="tournament-name-tag">
+                            <i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i>
+                            BGIS Tier 1 Scrims - Finals
+                        </span>
+                        <span class="match-status-badge status-victory">WWCD #1</span>
+                    </div>
+
+                    <div class="teams-faceoff-row">
+                        <div class="team-box">
+                            <div class="team-crest">
+                                <img src="assets/logo.jpg" alt="Harda">
+                            </div>
+                            <span class="team-name">HARDA</span>
+                        </div>
+
+                        <div class="score-display-box">
+                            <div class="score-num"><span class="winner">18</span> : <span>04</span></div>
+                            <span class="game-round-info">Erangel · Round 4</span>
+                        </div>
+
+                        <div class="team-box">
+                            <div class="team-crest">
+                                <i class="fa-solid fa-dragon" style="color: #ff3366;"></i>
+                            </div>
+                            <span class="team-name">GODLIKE</span>
+                        </div>
+                    </div>
+
+                    <div class="match-footer-row">
+                        <span>Game: <strong>BGMI Pro</strong></span>
+                        <span class="mvp-pill"><i class="fa-solid fa-crown"></i> MVP: HARDA · VORTEX (9 Kills)</span>
+                    </div>
+                </div>
+
+                <!-- Match 2 (Live / Ongoing) -->
+                <div class="match-card">
+                    <div class="match-header-row">
+                        <span class="tournament-name-tag">
+                            <i class="fa-solid fa-bolt" style="color: var(--accent-crimson);"></i>
+                            VCT India Challengers
+                        </span>
+                        <span class="match-status-badge status-live">● MAP 2 LIVE</span>
+                    </div>
+
+                    <div class="teams-faceoff-row">
+                        <div class="team-box">
+                            <div class="team-crest">
+                                <img src="assets/logo.jpg" alt="Harda">
+                            </div>
+                            <span class="team-name">HARDA</span>
+                        </div>
+
+                        <div class="score-display-box">
+                            <div class="score-num"><span class="winner">1</span> : <span>0</span></div>
+                            <span class="game-round-info">Ascent · Harda Pick</span>
+                        </div>
+
+                        <div class="team-box">
+                            <div class="team-crest">
+                                <i class="fa-solid fa-skull" style="color: #00d2ff;"></i>
+                            </div>
+                            <span class="team-name">RECKONING</span>
+                        </div>
+                    </div>
+
+                    <div class="match-footer-row">
+                        <span>Game: <strong>Valorant</strong></span>
+                        <span style="color: var(--accent-crimson); font-weight: 700;">Broadcast on YouTube</span>
+                    </div>
+                </div>
+
+                <!-- Match 3 (Free Fire Victory) -->
+                <div class="match-card">
+                    <div class="match-header-row">
+                        <span class="tournament-name-tag">
+                            <i class="fa-solid fa-medal" style="color: var(--accent-gold);"></i>
+                            Free Fire National Cup
+                        </span>
+                        <span class="match-status-badge status-victory">BOOYAH #1</span>
+                    </div>
+
+                    <div class="teams-faceoff-row">
+                        <div class="team-box">
+                            <div class="team-crest">
+                                <img src="assets/logo.jpg" alt="Harda">
+                            </div>
+                            <span class="team-name">HARDA</span>
+                        </div>
+
+                        <div class="score-display-box">
+                            <div class="score-num"><span class="winner">34</span> PTS</div>
+                            <span class="game-round-info">Bermuda · Match 6</span>
+                        </div>
+
+                        <div class="team-box">
+                            <div class="team-crest">
+                                <i class="fa-solid fa-shield-virus" style="color: #ffb703;"></i>
+                            </div>
+                            <span class="team-name">TOTAL GAMING</span>
+                        </div>
+                    </div>
+
+                    <div class="match-footer-row">
+                        <span>Game: <strong>Free Fire MAX</strong></span>
+                        <span class="mvp-pill"><i class="fa-solid fa-crown"></i> MVP: HARDA · VIPER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       ROSTERS & PRO PLAYERS SECTION
+       =================================================================== -->
+    <section class="rosters-section" id="rosters">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> The Athletes</span>
+                <h2>Active Game Rosters</h2>
+                <p>Meet the precision aimers, strategic shotcallers, and fearless assaulters representing Harda Esports.
+                </p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="roster-filter-nav">
+                <button class="filter-tab active" data-filter="all">All Divisions</button>
+                <button class="filter-tab" data-filter="bgmi">BGMI Mobile</button>
+                <button class="filter-tab" data-filter="valorant">Valorant PC</button>
+                <button class="filter-tab" data-filter="freefire">Free Fire MAX</button>
+            </div>
+
+            <!-- Players Grid -->
+            <div class="players-grid" id="players-container">
+
+                <!-- Player 1 (BGMI - Vortex) -->
+                <div class="player-card" data-game="bgmi">
+                    <div class="player-img-wrap">
+                        <img src="assets/player_bgmi.jpg" alt="Harda Vortex - Pro BGMI Player">
+                        <div class="player-gradient-tint"></div>
+                        <span class="player-role-badge">IGL & Assaulter</span>
+                        <span class="player-game-badge">BGMI</span>
+                    </div>
+
+                    <div class="player-card-content">
+                        <h3 class="player-ign">HARDA · VORTEX</h3>
+                        <span class="player-real-name">Aman Sharma (Captain)</span>
+
+                        <div class="player-stats-row">
+                            <div class="p-stat-box">
+                                <div class="num">6.85</div>
+                                <div class="lbl">F/D Ratio</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">38.4%</div>
+                                <div class="lbl">Headshot %</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">M416</div>
+                                <div class="lbl">Signature</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card-action">
+                            <button class="btn-player-details"
+                                onclick="openPlayerModal('HARDA · VORTEX', 'Aman Sharma', 'BGMI Team Captain & In-Game Leader', 'iPhone 15 Pro Max', 'Full Gyroscope (400%) / 4-Finger Claw', '6.85', 'M416 + M24', 'assets/player_bgmi.jpg')">
+                                <i class="fa-solid fa-sliders"></i> View Setup & Sensitivity
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 2 (BGMI - Shadow) -->
+                <div class="player-card" data-game="bgmi">
+                    <div class="player-img-wrap">
+                        <img src="assets/player_bgmi.jpg" alt="Harda Shadow" style="filter: hue-rotate(45deg);">
+                        <div class="player-gradient-tint"></div>
+                        <span class="player-role-badge">Sniper God</span>
+                        <span class="player-game-badge">BGMI</span>
+                    </div>
+
+                    <div class="player-card-content">
+                        <h3 class="player-ign">HARDA · SHADOW</h3>
+                        <span class="player-real-name">Rahul Verma</span>
+
+                        <div class="player-stats-row">
+                            <div class="p-stat-box">
+                                <div class="num">7.20</div>
+                                <div class="lbl">F/D Ratio</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">52.1%</div>
+                                <div class="lbl">Headshot %</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">AWM</div>
+                                <div class="lbl">Signature</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card-action">
+                            <button class="btn-player-details"
+                                onclick="openPlayerModal('HARDA · SHADOW', 'Rahul Verma', 'Primary Bolt-Action Sniper', 'iPad Pro M2', 'Non-Gyro 5-Finger Claw Master', '7.20', 'AWM + Beryl M762', 'assets/player_bgmi.jpg')">
+                                <i class="fa-solid fa-sliders"></i> View Setup & Sensitivity
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 3 (Valorant - Cypher/Entry) -->
+                <div class="player-card" data-game="valorant">
+                    <div class="player-img-wrap">
+                        <img src="assets/player_bgmi.jpg" alt="Harda Viper" style="filter: hue-rotate(180deg);">
+                        <div class="player-gradient-tint"></div>
+                        <span class="player-role-badge">Duelist / Entry</span>
+                        <span class="player-game-badge">VALORANT</span>
+                    </div>
+
+                    <div class="player-card-content">
+                        <h3 class="player-ign">HARDA · VIPER</h3>
+                        <span class="player-real-name">Devansh Rajput</span>
+
+                        <div class="player-stats-row">
+                            <div class="p-stat-box">
+                                <div class="num">285</div>
+                                <div class="lbl">ACS Rating</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">1.42</div>
+                                <div class="lbl">K/D Ratio</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">Jett / Raze</div>
+                                <div class="lbl">Agent Pool</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card-action">
+                            <button class="btn-player-details"
+                                onclick="openPlayerModal('HARDA · VIPER', 'Devansh Rajput', 'Main Duelist & First Blood Specialist', 'Intel i9 14900K + RTX 4080 | 360Hz BenQ ZOWIE', '800 DPI, 0.31 In-Game Sens | Logitech G Pro X Superlight', '1.42', 'Vandal / Operator', 'assets/player_bgmi.jpg')">
+                                <i class="fa-solid fa-sliders"></i> View Setup & Sensitivity
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player 4 (Free Fire - Cyclone) -->
+                <div class="player-card" data-game="freefire">
+                    <div class="player-img-wrap">
+                        <img src="assets/player_bgmi.jpg" alt="Harda Cyclone" style="filter: hue-rotate(270deg);">
+                        <div class="player-gradient-tint"></div>
+                        <span class="player-role-badge">Rusher / Shotgun</span>
+                        <span class="player-game-badge">FREE FIRE</span>
+                    </div>
+
+                    <div class="player-card-content">
+                        <h3 class="player-ign">HARDA · CYCLONE</h3>
+                        <span class="player-real-name">Karan Patel</span>
+
+                        <div class="player-stats-row">
+                            <div class="p-stat-box">
+                                <div class="num">8.40</div>
+                                <div class="lbl">K/D Ratio</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">68.2%</div>
+                                <div class="lbl">Headshot %</div>
+                            </div>
+                            <div class="p-stat-box">
+                                <div class="num">M1887</div>
+                                <div class="lbl">Signature</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card-action">
+                            <button class="btn-player-details"
+                                onclick="openPlayerModal('HARDA · CYCLONE', 'Karan Patel', 'Lead Rusher & Fast Gloo Wall Master', 'ROG Phone 8 Pro', 'General: 98, Red Dot: 95, 2x: 90 | 4-Finger HUD', '8.40', 'M1887 + MP40', 'assets/player_bgmi.jpg')">
+                                <i class="fa-solid fa-sliders"></i> View Setup & Sensitivity
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       TOURNAMENTS & SCRIMS HUB
+       =================================================================== -->
+    <section class="tournaments-section" id="tournaments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-fire"></i> Tournaments & Scrims</span>
+                <h2>Competitive Arena</h2>
+                <p>Register your squad for daily competitive scrims and the flagship Harda Invitational Tournament.</p>
+            </div>
+
+            <!-- Featured Championship Banner with Live Countdown -->
+            <div class="featured-tournament-banner">
+                <div class="tournament-banner-inner">
+                    <div class="tournament-content-side">
+                        <div class="tournament-date-badge">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>STARTING IN: <span id="tournament-countdown-badge">LIVE CLOCK</span></span>
+                        </div>
+
+                        <h3 class="tournament-title">HARDA INVITATIONAL CHAMPIONSHIP - SEASON 4</h3>
+                        <p class="tournament-desc">
+                            India's premier community showdown featuring 32 top Tier 1 & Tier 2 esports clans competing
+                            across 4 match days for regional supremacy and grand cash prizes.
+                        </p>
+
+                        <div class="tournament-details-pills">
+                            <div class="pill-item">
+                                <span class="val" style="color: var(--accent-gold);">₹1,00,000 INR</span>
+                                <span class="lbl">Prize Pool</span>
+                            </div>
+                            <div class="pill-item">
+                                <span class="val">BGMI Mobile</span>
+                                <span class="lbl">Game Title</span>
+                            </div>
+                            <div class="pill-item">
+                                <span class="val" style="color: var(--accent-green);">18 / 20 Slots</span>
+                                <span class="lbl">Registered Teams</span>
+                            </div>
+                        </div>
+
+                        <!-- Real-time Countdown Timer -->
+                        <div class="countdown-container">
+                            <div class="countdown-heading">REGISTRATION DEADLINE COUNTDOWN</div>
+                            <div class="countdown-grid" id="countdown-grid">
+                                <div class="countdown-unit">
+                                    <div class="number" id="count-days">04</div>
+                                    <div class="unit-name">Days</div>
+                                </div>
+                                <div class="countdown-unit">
+                                    <div class="number" id="count-hours">16</div>
+                                    <div class="unit-name">Hours</div>
+                                </div>
+                                <div class="countdown-unit">
+                                    <div class="number" id="count-minutes">42</div>
+                                    <div class="unit-name">Mins</div>
+                                </div>
+                                <div class="countdown-unit">
+                                    <div class="number" id="count-seconds">19</div>
+                                    <div class="unit-name">Secs</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-cyber-cyan" onclick="openModal('tournamentModal')">
+                            <i class="fa-solid fa-file-signature"></i>
+                            <span>Register Squad Now</span>
+                        </button>
+                    </div>
+
+                    <div class="tournament-visual-side">
+                        <img src="assets/tournament_bg.jpg" alt="Championship Trophy">
+                        <div class="tournament-visual-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Scrims Cards -->
+            <h3 style="font-size: 1.4rem; margin-bottom: 24px; color: #fff;">Daily Competitive Scrims</h3>
+            <div class="scrims-grid">
+                <div class="scrim-schedule-card">
+                    <div class="scrim-top">
+                        <span class="scrim-game"><i class="fa-solid fa-mobile-screen"></i> BGMI TIER 1 SCRIMS</span>
+                        <span class="scrim-slots">● 2 SLOTS LEFT</span>
+                    </div>
+                    <h4 class="scrim-title">Daily Evening War Room</h4>
+                    <div class="scrim-meta">
+                        <div class="scrim-meta-item"><i class="fa-solid fa-clock"></i> 8:00 PM - 10:30 PM IST</div>
+                        <div class="scrim-meta-item"><i class="fa-solid fa-map"></i> 4 Matches (Erangel, Miramar,
+                            Sanhok)</div>
+                        <div class="scrim-meta-item"><i class="fa-solid fa-shield"></i> Point System: Official BGIS
+                            Rules</div>
+                    </div>
+                    <button class="btn btn-outline scrim-register-btn" onclick="openModal('tournamentModal')">Book Scrim
+                        Slot</button>
+                </div>
+
+                <div class="scrim-schedule-card">
+                    <div class="scrim-top">
+                        <span class="scrim-game"><i class="fa-solid fa-desktop"></i> VALORANT CUSTOM SCRIMS</span>
+                        <span class="scrim-slots">● 4 SLOTS LEFT</span>
+                    </div>
+                    <h4 class="scrim-title">Custom 5v5 Tactical Scrims</h4>
+                    <div class="scrim-meta">
+                        <div class="scrim-meta-item"><i class="fa-solid fa-clock"></i> 6:30 PM - 9:00 PM IST</div>
+                        <div class="scrim-meta-item"><i class="fa-solid fa-map"></i> Best of 3 (Ascent, Bind, Sunset)
+                        </div>
+                        <div class="scrim-meta-item"><i class="fa-solid fa-shield"></i> Mumbai Server | Anti-Cheat
+                            Active</div>
+                    </div>
+                    <button class="btn btn-outline scrim-register-btn" onclick="openModal('tournamentModal')">Book Scrim
+                        Slot</button>
+                </div>
+
+                <div class="scrim-schedule-card">
+                    <div class="scrim-top">
+                        <span class="scrim-game"><i class="fa-solid fa-bolt"></i> FREE FIRE CLASH SQUAD</span>
+                        <span class="scrim-slots">● 1 SLOT LEFT</span>
+                    </div>
+                    <h4 class="scrim-title">Clash Squad Rush Cup</h4>
+                    <div class="scrim-meta">
+                        <div class="scrim-meta-item"><i class="fa-solid fa-clock"></i> 9:30 PM - 11:00 PM IST</div>
+                        <div class="scrim-meta-item"><i class="fa-solid fa-map"></i> 7 Rounds Hardcore Clash</div>
+                        <div class="scrim-meta-item"><i class="fa-solid fa-shield"></i> Fast-Paced Unlimited Ammo Mode
+                        </div>
+                    </div>
+                    <button class="btn btn-outline scrim-register-btn" onclick="openModal('tournamentModal')">Book Scrim
+                        Slot</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       ABOUT HARDA ESPORTS
+       =================================================================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-showcase">
+                    <img src="assets/hero_bg.jpg" alt="Harda Esports Headquarters" class="about-main-img">
+                    <div class="about-floating-stat">
+                        <div class="num">#1</div>
+                        <div class="text">Rising Gaming Hub</div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag"><i class="fa-solid fa-crown"></i> Our Legacy & Vision</span>
+                    <h2>Putting Harda On The Global Esports Map</h2>
+
+                    <p class="about-lead">
+                        Founded with an uncompromising ambition, Harda Esports Organization was created to prove that
+                        elite gaming talent thrives beyond metro cities.
+                    </p>
+
+                    <p class="about-body">
+                        Based in Harda, Madhya Pradesh, our organization supports aspiring esports athletes with
+                        world-class bootcamp infrastructure, tactical coaching, mental wellness conditioning, and access
+                        to Tier 1 scrims and official tournaments across India.
+                    </p>
+
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-bullseye"
+                                    style="color: var(--accent-cyan);"></i></div>
+                            <h4 class="value-title">Precision</h4>
+                            <p class="value-desc">Data-driven strategy, laser aim, and frame-perfect coordination in
+                                high-stress matches.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-handshake-angle"
+                                    style="color: var(--primary-purple);"></i></div>
+                            <h4 class="value-title">Brotherhood</h4>
+                            <p class="value-desc">Unwavering trust between teammates, fostering seamless synergy and
+                                calm comms.</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon"><i class="fa-solid fa-trophy"
+                                    style="color: var(--accent-gold);"></i></div>
+                            <h4 class="value-title">Victory</h4>
+                            <p class="value-desc">Relentless pursuit of championship trophies and national recognition.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#tryouts" class="btn btn-primary">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Apply For Boot Camp Tryouts</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       MEDIA & CLIPS HUB
+       =================================================================== -->
+    <section class="media-section" id="media">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fa-solid fa-video"></i> Media Hub</span>
+                <h2>Highlights & Montages</h2>
+                <p>Catch the most insane 1v4 clutches, AWM headshots, and tournament winning moments.</p>
+            </div>
+
+            <div class="media-cards-grid">
+                <div class="media-card" onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="media-thumb-wrap">
+                        <img src="assets/hero_bg.jpg" alt="BGMI Montage">
+                        <div class="play-button-overlay">
+                            <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <span class="video-duration">04:18</span>
+                    </div>
+                    <div class="media-info">
+                        <span class="media-tag">BGMI MONTAGE</span>
+                        <h4 class="media-title">HARDA · VORTEX 1v4 Grand Finals Clutch vs Team Soul</h4>
+                        <span class="media-views">84K Views • 3 days ago</span>
+                    </div>
+                </div>
+
+                <div class="media-card" onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="media-thumb-wrap">
+                        <img src="assets/tournament_bg.jpg" alt="Tournament Vlog">
+                        <div class="play-button-overlay">
+                            <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <span class="video-duration">12:45</span>
+                    </div>
+                    <div class="media-info">
+                        <span class="media-tag">BOOTCAMP VLOG</span>
+                        <h4 class="media-title">Inside The Harda Esports Gaming House: 14 Hours Daily Grind</h4>
+                        <span class="media-views">125K Views • 1 week ago</span>
+                    </div>
+                </div>
+
+                <div class="media-card" onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+                    <div class="media-thumb-wrap">
+                        <img src="assets/player_bgmi.jpg" alt="Valorant Aces">
+                        <div class="play-button-overlay">
+                            <div class="play-circle"><i class="fa-solid fa-play"></i></div>
+                        </div>
+                        <span class="video-duration">06:12</span>
+                    </div>
+                    <div class="media-info">
+                        <span class="media-tag">VALORANT ACES</span>
+                        <h4 class="media-title">HARDA · VIPER Unstoppable Jett Operator Ace in VCT Challengers</h4>
+                        <span class="media-views">42K Views • 2 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       TRYOUTS & RECRUITMENT APPLICATION
+       =================================================================== -->
+    <section class="tryouts-section" id="tryouts">
+        <div class="container">
+            <div class="tryouts-card-container">
+                <div class="tryouts-grid">
+                    <div class="tryouts-info">
+                        <span class="section-tag"><i class="fa-solid fa-user-plus"></i> Recruitment</span>
+                        <h2>Join Harda Esports Squad</h2>
+                        <p>
+                            Think you have the discipline, mechanical reflexes, and clutch mindset to compete at the
+                            highest level? Fill out the recruitment form below to participate in our closed scrim
+                            trials.
+                        </p>
+
+                        <div class="tryouts-perks-list">
+                            <div class="perk-item">
+                                <div class="perk-icon-box"><i class="fa-solid fa-house-laptop"></i></div>
+                                <div class="perk-text">
+                                    <h4>Bootcamp & Gear Sponsorship</h4>
+                                    <p>Full accommodation, gigabit fiber internet, and top-tier devices provided for
+                                        selected athletes.</p>
+                                </div>
+                            </div>
+
+                            <div class="perk-item">
+                                <div class="perk-icon-box"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                                <div class="perk-text">
+                                    <h4>Monthly Salary + Prize Share</h4>
+                                    <p>Competitive player stipends with industry-standard prize pool revenue splits.</p>
+                                </div>
+                            </div>
+
+                            <div class="perk-item">
+                                <div class="perk-icon-box"><i class="fa-solid fa-award"></i></div>
+                                <div class="perk-text">
+                                    <h4>Tier 1 Scrims & Tournament Pass</h4>
+                                    <p>Direct entry into verified scrims with India's top franchise teams.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Application Form -->
+                    <form class="recruitment-form" id="recruitment-form" onsubmit="handleRecruitmentSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="applicant-name">Full Name *</label>
+                                <input type="text" id="applicant-name" class="form-control"
+                                    placeholder="e.g. Rahul Sharma" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="applicant-ign">In-Game Name (IGN) *</label>
+                                <input type="text" id="applicant-ign" class="form-control"
+                                    placeholder="e.g. HARDA · BLADE" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="applicant-game">Select Game *</label>
+                                <select id="applicant-game" class="form-control" required>
+                                    <option value="BGMI">BGMI (Battlegrounds Mobile India)</option>
+                                    <option value="Valorant">Valorant (PC)</option>
+                                    <option value="Free Fire">Free Fire MAX</option>
+                                    <option value="COD Mobile">Call of Duty: Mobile</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="applicant-role">In-Game Role *</label>
+                                <select id="applicant-role" class="form-control" required>
+                                    <option value="IGL">In-Game Leader (IGL)</option>
+                                    <option value="Assaulter">Entry Fragger / Assaulter</option>
+                                    <option value="Sniper">Designated Sniper</option>
+                                    <option value="Support">Support / Flanker</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="applicant-uid">Character ID / Riot ID *</label>
+                                <input type="text" id="applicant-uid" class="form-control" placeholder="e.g. 5123498762"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="applicant-rank">Current Tier / Rank *</label>
+                                <input type="text" id="applicant-rank" class="form-control"
+                                    placeholder="e.g. Conqueror / Radiant / Heroic" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="applicant-contact">WhatsApp / Phone *</label>
+                                <input type="tel" id="applicant-contact" class="form-control"
+                                    placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="applicant-discord">Discord Username</label>
+                                <input type="text" id="applicant-discord" class="form-control"
+                                    placeholder="username#1234">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="applicant-experience">Competitive Experience / Past Teams</label>
+                            <textarea id="applicant-experience" class="form-control" rows="3"
+                                placeholder="List past tournaments played (BGIS, BMPS, City LANs) and achievements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-cyber-cyan" id="btn-submit-app">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Submit Tryout Application</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       PARTNERS & SPONSORS
+       =================================================================== -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="partners-heading">Official Gaming Gear & Technology Partners</div>
+            <div class="partners-flex">
+                <div class="partner-logo-item"><i class="fa-solid fa-gamepad"></i> ROG GAMING</div>
+                <div class="partner-logo-item"><i class="fa-brands fa-discord"></i> DISCORD</div>
+                <div class="partner-logo-item"><i class="fa-solid fa-bolt"></i> RED BULL</div>
+                <div class="partner-logo-item"><i class="fa-solid fa-keyboard"></i> RAZER</div>
+                <div class="partner-logo-item"><i class="fa-solid fa-microchip"></i> INTEL CORE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================================
+       FOOTER
+       =================================================================== -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#hero" class="brand-logo-link">
+                        <img src="assets/logo.jpg" alt="Harda Esports Logo" class="brand-logo-img">
+                        <div class="brand-text">
+                            <span class="brand-title">HARDA <span>ESPORTS</span></span>
+                            <span class="brand-subtitle">Organization</span>
+                        </div>
+                    </a>
+                    <p>
+                        India's fast-rising competitive gaming organization based in Harda, MP. Champions in battle
+                        royale, tactical shooters, and grassroots esports development.
+                    </p>
+                    <div class="social-links-row">
+                        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link-btn"
+                            title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link-btn"
+                            title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://discord.com" target="_blank" rel="noopener" class="social-link-btn"
+                            title="Discord"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link-btn"
+                            title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://whatsapp.com" target="_blank" rel="noopener" class="social-link-btn"
+                            title="WhatsApp Channel"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#matches">Match Scores</a></li>
+                        <li><a href="#rosters">Player Rosters</a></li>
+                        <li><a href="#tournaments">Tournaments & Scrims</a></li>
+                        <li><a href="#about">About Organization</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Game Divisions</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#rosters">BGMI Mobile Squad</a></li>
+                        <li><a href="#rosters">Valorant Division</a></li>
+                        <li><a href="#rosters">Free Fire MAX Lineup</a></li>
+                        <li><a href="#rosters">Call of Duty Mobile</a></li>
+                        <li><a href="#tryouts">Community Clan Trials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Stay Connected</h4>
+                    <p style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 12px;">
+                        Subscribe for scrim passwords, tournament slots, and merchandise drops.
+                    </p>
+                    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-cyber-cyan" style="padding: 10px;">
+                            <span>Join Fan Club</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>
+                    © 2026 <strong>HARDA ESPORTS ORGANIZATION</strong>. All rights reserved.
+                </div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Participation</a>
+                    <a href="#">Fairplay Code of Conduct</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================
+       MODAL: TOURNAMENT REGISTRATION
+       =================================================================== -->
+    <div class="modal-overlay" id="tournamentModal">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h3 class="modal-title"><i class="fa-solid fa-trophy" style="color: var(--accent-gold);"></i> Tournament
+                    Squad Registration</h3>
+                <button class="modal-close-btn" onclick="closeModal('tournamentModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="tournament-reg-form" onsubmit="handleTournamentRegister(event)">
+                    <div class="form-group" style="margin-bottom: 14px;">
+                        <label>Select Tournament / Scrim</label>
+                        <select class="form-control" required>
+                            <option value="Harda Invitational S4">Harda Invitational S4 (₹1,00,000 INR)</option>
+                            <option value="Daily BGMI Tier 1 Scrims">Daily BGMI Tier 1 Scrims (8:00 PM IST)</option>
+                            <option value="Valorant Custom Scrims">Valorant 5v5 Custom Scrims</option>
+                            <option value="Free Fire Clash Squad">Free Fire Clash Squad Rush Cup</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row" style="margin-bottom: 14px;">
+                        <div class="form-group">
+                            <label>Team / Clan Name</label>
+                            <input type="text" class="form-control" placeholder="e.g. GODLIKE ESPORTS" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Team Tag</label>
+                            <input type="text" class="form-control" placeholder="e.g. GODx" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row" style="margin-bottom: 14px;">
+                        <div class="form-group">
+                            <label>Leader's Name</label>
+                            <input type="text" class="form-control" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Leader's WhatsApp</label>
+                            <input type="tel" class="form-control" placeholder="+91 9876543210" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <label>Roster Player IGNs (Player 1 to 4)</label>
+                        <textarea class="form-control" rows="3"
+                            placeholder="P1: Leader_IGN (UID: 12345)&#10;P2: Assaulter_IGN (UID: 67890)&#10;P3: Sniper_IGN&#10;P4: Support_IGN"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-cyber-cyan" style="width: 100%;">
+                        <span>Confirm Squad Registration</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================
+       MODAL: PLAYER SETUP & SENSITIVITY PROFILE
+       =================================================================== -->
+    <div class="modal-overlay" id="playerModal">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h3 class="modal-title" id="m-player-title"><i class="fa-solid fa-sliders"
+                        style="color: var(--accent-cyan);"></i> Player Sensitivity & Setup</h3>
+                <button class="modal-close-btn" onclick="closeModal('playerModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
+                    <img id="m-player-img" src="assets/player_bgmi.jpg" alt="Player Avatar"
+                        style="width: 80px; height: 80px; border-radius: 12px; object-fit: cover; border: 2px solid var(--accent-cyan);">
+                    <div>
+                        <h4 id="m-player-ign" style="font-size: 1.3rem; margin-bottom: 4px;">HARDA · VORTEX</h4>
+                        <div id="m-player-role"
+                            style="color: var(--accent-cyan); font-size: 0.9rem; font-family: var(--font-display); font-weight: 700;">
+                            IGL & Assaulter</div>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(255,255,255,0.03); border-radius: 12px; padding: 18px; border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 14px;">
+                    <div>
+                        <span
+                            style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block; font-family: var(--font-heading);">Hardware
+                            & Device</span>
+                        <strong id="m-player-device" style="color: #fff; font-size: 1.05rem;">iPhone 15 Pro Max (120
+                            FPS)</strong>
+                    </div>
+                    <div>
+                        <span
+                            style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block; font-family: var(--font-heading);">Sensitivity
+                            / Grip Layout</span>
+                        <strong id="m-player-sens" style="color: var(--accent-cyan); font-size: 0.95rem;">Full Gyroscope
+                            (400%) / 4-Finger Claw</strong>
+                    </div>
+                    <div>
+                        <span
+                            style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-dim); display: block; font-family: var(--font-heading);">Signature
+                            Weapons & Setup</span>
+                        <strong id="m-player-weapons" style="color: #fff; font-size: 0.95rem;">M416 + M24</strong>
+                    </div>
+                </div>
+
+                <button class="btn btn-outline" style="width: 100%; margin-top: 20px;"
+                    onclick="closeModal('playerModal')">
+                    Close Profile
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================
+       MODAL: VIDEO PLAYER
+       =================================================================== -->
+    <div class="modal-overlay" id="videoModal">
+        <div class="modal-window" style="max-width: 800px; padding: 0;">
+            <div class="modal-header" style="background: #000; border-bottom: 1px solid rgba(255,255,255,0.1);">
+                <h3 class="modal-title" style="color: #fff;"><i class="fa-solid fa-play"
+                        style="color: var(--accent-crimson);"></i> Harda Esports Highlight Reel</h3>
+                <button class="modal-close-btn" onclick="closeModal('videoModal')">&times;</button>
+            </div>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: #000;">
+                <iframe id="video-frame"
+                    style="position: absolute; top:0; left: 0; width: 100%; height: 100%; border: 0;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================
+       INTERACTIVE TOAST NOTIFICATION
+       =================================================================== -->
+    <div class="toast-notice" id="toast-notification">
+        <i class="fa-solid fa-circle-check" style="color: var(--accent-green); font-size: 1.4rem;"></i>
+        <div>
+            <h5 id="toast-title" style="font-size: 0.95rem; font-weight: 700; color: #fff;">Success</h5>
+            <p id="toast-message" style="font-size: 0.82rem; color: var(--text-muted); margin: 0;">Your submission has
+                been recorded.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
